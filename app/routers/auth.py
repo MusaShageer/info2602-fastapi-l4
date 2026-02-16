@@ -2,8 +2,9 @@ from fastapi import APIRouter, HTTPException, Depends
 from sqlmodel import select
 from app.database import SessionDep, get_session
 from sqlmodel import Session
-from app.models import RegularUser, User
-from app.auth import encrypt_password, verify_password, create_access_token, get_current_user
+from app.models import *
+from app.auth import encrypt_password, verify_password, create_access_token, get_current_user, AuthDep
+from app.routers.todos import *
 from fastapi.security import OAuth2PasswordRequestForm
 from typing import Annotated
 from fastapi import status
@@ -31,3 +32,21 @@ async def login_for_access_token(
 def get_user_by_id(db: Annotated[Session, Depends(get_session)], user: User = Depends(get_current_user)):
     return user
 
+@auth_router.post('/signup', response_model=UserResponse, status_code=status.HTTP_201_CREATED)
+def signup_user(user_data: UserCreate, db:SessionDep):
+  try:
+    new_user = RegularUser(
+        username=user_data.username, 
+        email=user_data.email, 
+        password=encrypt_password(user_data.password)
+    )
+    db.add(new_user)
+    db.commit()
+    return new_user
+  except Exception:
+    db.rollback()
+    raise HTTPException(
+                status_code=400,
+                detail="Username or email already exists",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
