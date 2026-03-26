@@ -62,6 +62,38 @@ def get_creature(name:str):
             return
         print(creature)
 
+@cli.command()
+def get_all_creatures():
+    with get_cli_session() as db:
+        all_creatures = db.exec(select(Creatures)).all()
+        if not all_creatures:
+            print("No users found")
+        else:
+            for creature in all_creatures:
+                print(creature)
+
+@cli.command()
+def change_name(name: str, new_name:str):
+    with get_cli_session() as db: # Get a connection to the database
+        creature = db.exec(select(Creatures).where(Creatures.name == name)).first()
+        if not creature:
+            print(f'{name} not found! Unable to update email.')
+            return
+        creature.name = new_name
+        db.add(creature)
+        db.commit()
+        print(f"Updated {creature.id}'s name to {creature.name}")
+
+@cli.command()
+def delete_creature(name: str):
+    with get_cli_session() as db:
+        creature = db.exec(select(Creatures).where(Creatures.name == name)).first()
+        if not creature:
+            print(f'{name} not found! Unable to delete user.')
+            return
+        db.delete(creature)
+        db.commit()
+        print(f'{name} deleted')
 
 if __name__ == "__main__":
     cli()
