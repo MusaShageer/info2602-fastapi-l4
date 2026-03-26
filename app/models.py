@@ -16,6 +16,7 @@ class RegularUser(User, table=True):
     role:str = "regular_user"
 
     todos: list['Todo'] = Relationship(back_populates="user")
+    creatures: list['Creatures'] = Relationship(back_populates="user")
 
 class TodoCategory(SQLModel, table=True):
     category_id: int = Field(foreign_key="category.id", primary_key=True)
@@ -70,3 +71,14 @@ class UserResponse(SQLModel):
     username: str = Field(max_length=255)
     email: EmailStr = Field(max_length=255)
     role: str
+
+class Creatures(SQLModel, table=True):
+    id: Optional[int] = Field(default = None, primary_key=True)
+    name: str
+    commonloc: Optional[str] = Field(default = None)
+    user: RegularUser = Relationship(back_populates = "creatures")
+    user_id: Optional[int] = Field(foreign_key="regularuser.id")
+
+class UserCreature(SQLModel, table=True):
+    user_id: int = Field(foreign_key="regularuser.id", primary_key=True)
+    creature_id: int = Field(foreign_key="creatures.id", primary_key=True)

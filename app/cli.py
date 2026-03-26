@@ -19,27 +19,48 @@ def initialize():
         db.add_all([bob, rick, sally])  #add all can save multiple objects at once
         db.commit()
 
-        with open('todos.csv') as file:
+        with open('zelda.csv') as file:
             reader = csv.DictReader(file)
             for row in reader:
-                new_todo = Todo(text=row['text'])  #create object
-                #update fields based on records
-                new_todo.done = True if row['done'] == 'true' else False
-                new_todo.user_id = int(row['user_id'])
-                db.add(new_todo)  #queue changes for saving
+                new_zelda = Creatures(
+                    id=int(row['Reference Number']),
+                    name= str(row['Name']),
+                    commonloc=str(row['Common Locations 1'])
+                )
+                db.add(new_zelda)  #queue changes for saving
             db.commit()
 
         print("Database Initialized")
 
+
+
+
 @cli.command()
-def list_todos():
+def list_creatures():
     with get_cli_session() as db: # Get a connection to the database
         data = []
-        for todo in db.exec(select(Todo)).all():
+        for creature in db.exec(select(Creatures)).all():
             data.append(
-                [todo.text, todo.done, todo.user.username,
-                todo.get_cat_list()])
-        print(tabulate(data, headers=["Text", "Done", "User", "Categories"]))
+                [creature.id, creature.name, creature.commonloc])
+        print(tabulate(data, headers=["id", "name", "common location"]))
+
+@cli.command()
+def get_user(username:str):
+    with get_cli_session() as db: # Get a connection to the database
+        user = db.exec(select(RegularUser).where(RegularUser.username == username)).first()
+        if not user:
+            print(f'{username} not found!')
+            return
+        print(user)
+
+@cli.command()
+def get_creature(name:str):
+    with get_cli_session() as db: # Get a connection to the database
+        creature = db.exec(select(Creatures).where(Creatures.name == name)).first()
+        if not creature:
+            print(f'{name} not found!')
+            return
+        print(creature)
 
 
 if __name__ == "__main__":

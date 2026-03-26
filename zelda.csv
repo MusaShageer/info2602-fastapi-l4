@@ -1,0 +1,84 @@
+Reference Number,Name,Recoverable Materials 1,Recoverable Materials 2,Recoverable Materials 3,Common Locations 1,Common Locations 2,Cooking Effects,Hearts Recovered,Mountable,Wild/Domestic/Both,Type
+1,Horse,,,,Hyrule Field,Faron Grasslands,,0,Yes,Both,Mammal
+2,Giant Horse,,,,,,,0,Yes,Both,Mammal
+3,White Horse,,,,,,,0,Yes,Both,Mammal
+4,Lord of the Mountain,,,,,,,0,Yes,Wild,Mystical
+5,Stalhorse,,,,Hebra Mountains,Akkala Highlands,,0,Yes,Wild,Undead
+6,Donkey,,,,Greater Hyrule,,,0,No,Domestic,Mammal
+7,Sand Seal,,,,Gerudo Desert,,,0,Yes,Both,Mammal
+8,Patricia,,,,Gerudo Desert,,,0,No,Domestic,Mammal
+9,Bushy-Tailed Squirrel,Acorn,,,Hyrule Field,Hyrule Ridge,,0,No,Wild,Mammal
+10,Woodland Boar,Raw Meat,,,Hyrule Field,Lanayru Great Spring,,0,No,Wild,Mammal
+11,Red-Tusked Boar,Raw Prime Meat,,,Akkala Highlands,Deep Akkala,,0,No,Wild,Mammal
+12,Mountain Goat,Raw Meat,,,Hyrule Ridge,Great Hyrule Forest,,0,No,Wild,Mammal
+13,White Goat,,,,West Necluda,Eldin Canyon,,0,No,Domestic,Mammal
+14,Mountain Buck,Raw Prime Meat,,,Hyrule Field,Lanayru Great Spring,,0,Yes,Wild,Mammal
+15,Mountain Doe,Raw Prime Meat,,,Hyrule Field,Lanayru Great Spring,,0,Yes,Wild,Mammal
+16,Water Buffalo,Raw Prime Meat,Raw Gourmet Meat,,Lanayru Wetlands,Akkala Highlands,,0,No,Wild,Mammal
+17,Hateno Cow,,,,East Necluda,Faron Grasslands,,0,No,Domestic,Mammal
+18,Highland Sheep,,,,East Necluda,Akkala Highlands,,0,No,Domestic,Mammal
+19,Grassland Fox,Raw Meat,,,Hyrule Field,Lanayru Great Spring,,0,No,Wild,Mammal
+20,Snowcoat Fox,Raw Prime Meat,Raw Gourmet Meat,,Hebra Mountains,Tabantha Frontier,,0,No,Wild,Mammal
+21,Maraudo Wolf,Raw Prime Meat,Raw Gourmet Meat,,Tabantha Frontier,Great Hyrule Forest,,0,No,Wild,Mammal
+22,Wasteland Coyote,Raw Prime Meat,Raw Gourmet Meat,,Gerudo Desert,Gerudo Highlands,,0,No,Wild,Mammal
+23,Cold-Footed Wolf,Raw Prime Meat,Raw Gourmet Meat,,Hebra Mountains,Gerudo Highlands,,0,No,Wild,Mammal
+24,Tabantha Moose,Raw Prime Meat,Raw Gourmet Meat,,Hebra Mountains,Gerudo Highlands,,0,No,Wild,Mammal
+25,Great-Horned Rhinoceros,Raw Prime Meat,Raw Gourmet Meat,,Hebra Mountains,Gerudo Highlands,,0,No,Wild,Mammal
+26,Honeyvore Bear,Raw Prime Meat,Raw Gourmet Meat,Courser Bee Honey,Tabantha Frontier,Akkala Highlands,,0,Yes,Wild,Mammal
+27,Grizzlemaw Bear,Raw Prime Meat,Raw Gourmet Meat,Hearty Salmon,Hebra Mountains,Gerudo Highlands,,0,Yes,Wild,Mammal
+28,Hylian Retriever,,,,Akkala Highlands,Hebra Mountains,,0,No,Domestic,Mammal
+29,Blupee,,,,,,,0,No,Wild,Mystical
+30,Common Sparrow,Chickaloo Tree Nut,,,Hyrule Field,Hyrule Ridge,,0,No,Wild,Bird
+31,Red Sparrow,Chickaloo Tree Nut,,,Hebra Mountains,Tabantha Frontier,,0,No,Wild,Bird
+32,Blue Sparrow,Chickaloo Tree Nut,,,Lanayru Great Spring,Great Hyrule Forest,,0,No,Wild,Bird
+33,Rainbow Sparrow,Chickaloo Tree Nut,,,Faron Grasslands,West Necluda,,0,No,Wild,Bird
+34,Sand Sparrow,Chickaloo Tree Nut,,,Gerudo Desert,,,0,No,Wild,Bird
+35,Golden Sparrow,Chickaloo Tree Nut,,,Great Hyrule Forest,Eldin Canyon,,0,No,Wild,Bird
+36,Wood Pigeon,Raw Bird Drumstick,,,Great Hyrule Forest,Hyrule Ridge,,0,No,Wild,Bird
+37,Rainbow Pigeon,Raw Bird Thigh,,,Hyrule Ridge,Great Hyrule Forest,,0,No,Wild,Bird
+38,Hotfeather Pigeon,Raw Bird Thigh,,,Eldin Canyon,Eldin Mountains,,0,No,Wild,Bird
+39,White Pigeon,Raw Bird Thigh,Raw Whole Bird,,Hebra Mountains,Gerudo Highlands,,0,No,Wild,Bird
+40,Mountain Crow,Raw Bird Drumstick,,,Hyrule Ridge,Great Hyrule Forest,,0,No,Wild,Bird
+41,Bright-Chested Duck,Raw Bird Drumstick,,,Hyrule Ridge,Hyrule Field,,0,No,Wild,Bird
+42,Blue-Winged Heron,Raw Bird Drumstick,,,Hyrule Ridge,Faron Grasslands,,0,No,Wild,Bird
+43,Pink Heron,Raw Bird Drumstick,,,Hyrule Ridge,Hyrule Field,,0,No,Wild,Bird
+44,Islander Hawk,Raw Bird Thigh,,,Hyrule Ridge,Hyrule Field,,0,No,Wild,Bird
+45,Seagull,Raw Bird Drumstick,,,Necluda Sea,Akkala Sea,,0,No,Wild,Bird
+46,Eldin Ostrich,Raw Bird Thigh,Raw Whole Bird,,Eldin Canyon,Eldin Mountains,,0,No,Wild,Bird
+47,Cucco,Bird Egg,,,West Necluda,East Necluda,,0,No,Domestic,Bird
+48,Hyrule Bass,Is Material,,,Hyrule Field,West Necluda,Heart Recovery,1,No,Wild,Fish
+49,Hearty Bass,Is Material,,,West Necluda,Akkala Highlands,Extra Hearts,2,No,Wild,Fish
+50,Staminoka Bass,Is Material,,,Hyrule Field,West Necluda,Stamina Recovery,1,No,Wild,Fish
+51,Hearty Salmon,Is Material,,,Tabantha Frontier,Hebra Mountains,Extra Hearts,4,No,Wild,Fish
+52,Chillfin Trout,Is Material,,,Tabantha Frontier,Hebra Mountains,Heat Resistance,1,No,Wild,Fish
+53,Sizzlefin Trout,Is Material,,,Eldin Canyon,Eldin Mountains,Cold Resistance,1,No,Wild,Fish
+54,Voltfin Trout,Is Material,,,Tabantha Frontier,Hyrule Ridge,Shock Resistance,1,No,Wild,Fish
+55,Stealthfin Trout,Is Material,,,Great Hyrule Forest,Eldin Mountains,Stealth Up,1,No,Wild,Fish
+56,Mighty Carp,Is Material,,,Akkala Highlands,Lanayru Great Spring,Attack Up,1,No,Wild,Fish
+57,Armored Carp,Is Material,,,Lanayru Great Spring,East Necluda,Defense Up,1,No,Wild,Fish
+58,Sanke Carp,Is Material,,,West Necluda,,Heart Recovery,1,No,Wild,Fish
+59,Mighty Porgy,Is Material,,,Necluda Sea,Lanayru Sea,Attack Up,1,No,Wild,Fish
+60,Armored Porgy,Is Material,,,Necluda Sea,Lanayru Sea,Defense Up,1,No,Wild,Fish
+61,Sneaky River Snail,Is Material,,,West Necluda,Lanayru Great Spring,Stealth Up,1,No,Wild,Mollusk
+62,Hearty Blueshell Snail,Is Material,,,Lanayru Sea,Necluda Sea,Extra Hearts,3,No,Wild,Mollusk
+63,Razorclaw Crab,Is Material,,,Necluda Sea,East Necluda,Attack Up,1,No,Wild,Crustacean
+64,Ironshell Crab,Is Material,,,Necluda Sea,East Necluda,Defense Up,1,No,Wild,Crustacean
+65,Bright-Eyed Crab,Is Material,,,Lanayru Great Spring,Eldin Canyon,Stamina Recovery,1,No,Wild,Crustacean
+66,Fairy,Is Material,,,Greater Hyrule,,Heart Recovery,5,No,Wild,Magical
+67,Winterwing Butterfly,Is Material,,,Hyrule Ridge,Tabantha Frontier,Heat Resistance,0,No,Wild,Insect
+68,Summerwing Butterfly,Is Material,,,Great Hyrule Forest,Eldin Mountains,Cold Resistance,0,No,Wild,Insect
+69,Thunderwing Butterfly,Is Material,,,Hyrule Ridge,Gerudo Highlands,Shock Resistance,0,No,Wild,Insect
+70,Smotherwing Butterfly,Is Material,,,Eldin Canyon,Death Mountain,Flame Guard,0,No,Wild,Insect
+71,Cold Darner,Is Material,,,Tabantha Frontier,Hyrule Ridge,Heat Resistance,0,No,Wild,Insect
+72,Warm Darner,Is Material,,,Akkala Highlands,Hyrule Field,Cold Resistance,0,No,Wild,Insect
+73,Electric Darner,Is Material,,,Hyrule Ridge,Gerudo Desert,Shock Resistance,0,No,Wild,Insect
+74,Restless Cricket,Is Material,,,Hyrule Field,East Necluda,Stamina Recovery,0,No,Wild,Insect
+75,Bladed Rhino Beetle,Is Material,,,West Necluda,East Necluda,Attack Up,0,No,Wild,Insect
+76,Rugged Rhino Beetle,Is Material,,,Hyrule Field,Faron Grasslands,Defense Up,0,No,Wild,Insect
+77,Energetic Rhino Beetle,Is Material,,,Akkala Highlands,West Necluda,Stamina Recovery,0,No,Wild,Insect
+78,Sunset Firefly,Is Material,,,West Necluda,Great Hyrule Forest,Stealth Up,0,No,Wild,Insect
+79,Hot-Footed Frog,Is Material,,,Lanayru Great Spring,Hyrule Ridge,Speed Up,0,No,Wild,Amphibian
+80,Tireless Frog,Is Material,,,Lanayru Great Spring,Hyrule Ridge,Extra Stamina,0,No,Wild,Amphibian
+81,Hightail Lizard,Is Material,,,West Necluda,East Necluda,Speed Up,0,No,Wild,Reptile
+82,Hearty Lizard,Is Material,,,Gerudo Desert,Necluda Sea,Extra Hearts,0,No,Wild,Reptile
+83,Fireproof Lizard,Is Material,,,Eldin Canyon,Death Mountain,Flame Guard,0,No,Wild,Reptile

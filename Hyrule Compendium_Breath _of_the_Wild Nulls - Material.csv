@@ -1,0 +1,37 @@
+Reference Number,Name,Common Locations,Common Locations 2,Cooking Effects,Hearts Recovered,Type
+162,Apple,Hyrule Field,East Necluda,Heart Recovery,0.5,Fruit
+163,Palm Fruit,East Necluda,Gerudo Desert,Heart Recovery,1,Fruit
+164,Wildberry,Gerudo Highlands,Hebra Mountains,Heart Recovery,0.5,Fruit
+165,Hearty Durian,West Necluda,Faron Grasslands,Extra Hearts,3,Fruit
+166,Hydromelon,Gerudo Desert,Faron Grasslands,Heat Resistance,0.5,Fruit
+167,Spicy Pepper,Gerudo Desert,Tabantha Frontier,Cold Resistance,0.5,Fruit
+168,Voltfruit,Gerudo Desert,Gerudo Highlands,Shock Resistance,0.5,Fruit
+169,Fleet-Lotus Seeds,Lanayru Wetlands,Lanayru Great Spring,Speed Up,0.5,Seed
+170,Mighty Bananas,Faron,,Attack Up,0.5,Fruit
+171,Hylian Shroom,Hyrule Field,West Necluda,Heart Recovery,0.5,Fungus
+172,Endura Shroom,Hyrule Ridge,Hyrule Field,Extra Stamina,1,Fungus
+173,Stamella Shroom,Hyrule Ridge,Hyrule Field,Stamina Recovery,0.5,Fungus
+174,Hearty Truffle,Great Hyrule Forest,Hyrule Field,Extra Hearts,2,Fungus
+175,Big Hearty Truffle,Hebra Mountains,Great Hyrule Forest,Extra Hearts,3,Fungus
+176,Chillshroom,Hebra Mountains,Mount Lanayru,Heat Resistance,0.5,Fungus
+177,Sunshroom,Eldin Canyon,Gerudo Highlands,Cold Resistance,0.5,Fungus
+178,Zapshroom,Deep Akkala,Gerudo Highlands,Shock Resistance,0.5,Fungus
+179,Rushroom,Gerudo Highlands,Hyrule Ridge,Speed Up,0.5,Fungus
+180,Razorshroom,Great Hyrule Forest,Tabantha Frontier,Attack Up,0.5,Fungus
+181,Ironshroom,West Necluda,East Necluda,Defense Up,0.5,Fungus
+182,Silent Shroom,Lanayru Great Spring,West Necluda,Stealth Up,0.5,Fungus
+183,Hyrule Herb,Hyrule Field,Akkala Highlands,Heart Recovery,1,Plant
+184,Hearty Radish,Hyrule Ridge,East Necluda,Extra Hearts,2.5,Root
+185,Big Hearty Radish,Akkala Highlands,Lanayru Great Spring,Extra Hearts,4,Root
+186,Cool Safflina,Hebra Mountains,Gerudo Highlands,Heat Resistance,0,Medicinal Plant
+187,Warm Safflina,Gerudo Desert,Hyrule Ridge,Cold Resistance,0,Medicinal Plant
+188,Electric Safflina,Gerudo Desert,Hyrule Ridge,Shock Resistance,0,Medicinal Plant
+189,Swift Carrot,Kakariko Village,,Speed Up,0.5,Root
+190,Endura Carrot,Hyrule Ridge,Faron Grasslands,Extra Stamina,2,Root
+191,Fortified Pumpkin,Kakariko Village,,Defense Up,0.5,Fruit
+192,Swift Violet,Gerudo Highlands,Hebra Mountains,Speed Up,0,Flower
+193,Mighty Thistle,West Necluda,Faron Grasslands,Attack Up,0,Medicinal Plant
+194,Armoranth,Akkala Highlands,Hyrule Ridge,Defense Up,0,Medicinal Plant
+195,Blue Nightshade,West Necluda,Lanayru Great Spring,Stealth Up,0,Plant
+196,Silent Princess,Hyrule Ridge,West Necluda,Stealth Up,0,Flower
+197,Courser Bee Honey,Hyrule Field,Tabantha Frontier,Stamina Recovery,2,Honey
