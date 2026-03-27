@@ -95,5 +95,87 @@ def delete_creature(name: str):
         db.commit()
         print(f'{name} deleted')
 
+@cli.command()
+def add_creature(new_name: str, commonloc: str):
+    with get_cli_session() as db:
+        new_creature = Creatures(
+            name=new_name,
+            commonloc=commonloc
+        )
+
+        db.add(new_creature)
+        db.commit()
+
+        print("Creature added successfully")
+
+@cli.command()
+def add_category(name: str, user_id: int):
+    with get_cli_session() as db:
+        category = ZeldaCategory(
+            name=name,
+            user_id=user_id
+        )
+
+        db.add(category)
+        db.commit()
+
+        print(f"Category '{name}' created")
+
+@cli.command()
+def add_creature_to_category(creature_name: str, category_name: str):
+    with get_cli_session() as db:
+        
+        # Find creature
+        creature = db.exec(
+            select(Creatures).where(Creatures.name == creature_name)
+        ).first()
+
+        if not creature:
+            print("Creature not found")
+            return
+
+        # Find category
+        category = db.exec(
+            select(ZeldaCategory).where(ZeldaCategory.name == category_name)
+        ).first()
+
+        if not category:
+            print("Category not found")
+            return
+
+        # Link them (THIS is the key part)
+        category.creatures.append(creature)
+
+        db.add(category)
+        db.commit()
+
+        print(f"{creature_name} added to {category_name}")
+
+@cli.command()
+def assign_creature_to_user(creature_name: str, username: str):
+    with get_cli_session() as db:
+
+        # Find creature
+        creature = db.exec(select(Creatures).where(Creatures.name == creature_name)).first()
+
+        if not creature:
+            print("Creature not found")
+            return
+
+        # Find user
+        user = db.exec(select(RegularUser).where(RegularUser.username == username)).first()
+
+        if not user:
+            print("User not found")
+            return
+
+        # Assign creature
+        creature.user_id = user.id
+
+        db.add(creature)
+        db.commit()
+
+        print(f"{creature_name} assigned to {username}")
+
 if __name__ == "__main__":
     cli()

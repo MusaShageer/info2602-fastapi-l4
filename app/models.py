@@ -22,6 +22,18 @@ class TodoCategory(SQLModel, table=True):
     category_id: int = Field(foreign_key="category.id", primary_key=True)
     todo_id: int = Field(foreign_key="todo.id", primary_key=True)
 
+
+class CreatureCategory(SQLModel, table=True):
+    category_id: int = Field(foreign_key="zeldacategory.id", primary_key=True)
+    creature_id: int = Field(foreign_key="creatures.id", primary_key=True)
+
+class ZeldaCategory(SQLModel, table=True):
+    id: Optional[int] = Field(primary_key=True, default=None)
+    user_id: int = Field(foreign_key="regularuser.id")
+    name: str
+
+    creatures: list['Creatures'] = Relationship(back_populates="categories",link_model=CreatureCategory)
+
 class Category(SQLModel, table=True):
     id: Optional[int] = Field(primary_key=True, default=None)
     user_id: int = Field(foreign_key="regularuser.id")
@@ -78,6 +90,7 @@ class Creatures(SQLModel, table=True):
     commonloc: Optional[str] = Field(default = None)
     user: RegularUser = Relationship(back_populates = "creatures")
     user_id: Optional[int] = Field(foreign_key="regularuser.id")
+    categories: list['ZeldaCategory'] = Relationship(back_populates="creatures",link_model=CreatureCategory)
 
 class UserCreature(SQLModel, table=True):
     user_id: int = Field(foreign_key="regularuser.id", primary_key=True)
