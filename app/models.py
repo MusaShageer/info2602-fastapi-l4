@@ -92,6 +92,15 @@ class Creatures(SQLModel, table=True):
     user_id: Optional[int] = Field(foreign_key="regularuser.id")
     categories: list['ZeldaCategory'] = Relationship(back_populates="creatures",link_model=CreatureCategory)
 
+class CreatureCreate(SQLModel):
+    name: str
+    commonloc: Optional[str] = Field(default=None)
+
+class CreatureResponse(SQLModel):
+    id: int
+    name: str
+    commonloc: Optional[str] = None
+
 class UserCreature(SQLModel, table=True):
     user_id: int = Field(foreign_key="regularuser.id", primary_key=True)
     creature_id: int = Field(foreign_key="creatures.id", primary_key=True)

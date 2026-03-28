@@ -95,18 +95,18 @@ def delete_creature(name: str):
         db.commit()
         print(f'{name} deleted')
 
-@cli.command()
-def add_creature(new_name: str, commonloc: str):
-    with get_cli_session() as db:
-        new_creature = Creatures(
-            name=new_name,
-            commonloc=commonloc
-        )
+# @cli.command()
+# def add_creature(new_name: str, commonloc: str):
+#     with get_cli_session() as db:
+#         new_creature = Creatures(
+#             name=new_name,
+#             commonloc=commonloc
+#         )
 
-        db.add(new_creature)
-        db.commit()
+#         db.add(new_creature)
+#         db.commit()
 
-        print("Creature added successfully")
+#         print("Creature added successfully")
 
 @cli.command()
 def add_category(name: str, user_id: int):

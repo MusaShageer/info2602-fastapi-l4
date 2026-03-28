@@ -50,3 +50,21 @@ def signup_user(user_data: UserCreate, db:SessionDep):
                 detail="Username or email already exists",
                 headers={"WWW-Authenticate": "Bearer"},
             )
+
+@auth_router.post('/createcreature', response_model=CreatureResponse, status_code=status.HTTP_201_CREATED)
+def signup_user(new_creature: CreatureCreate, db:SessionDep):
+  try:
+    new_creature = Creatures(
+        name=new_creature.name, 
+        commonloc=new_creature.commonloc 
+    )
+    db.add(new_creature)
+    db.commit()
+    return new_creature
+  except Exception:
+    db.rollback()
+    raise HTTPException(
+                status_code=400,
+                detail="Username or email already exists",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
