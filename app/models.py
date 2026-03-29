@@ -15,6 +15,7 @@ class Admin(User, table=True):
 class RegularUser(User, table=True):
     role:str = "regular_user"
 
+
     todos: list['Todo'] = Relationship(back_populates="user")
     creatures: list['Creatures'] = Relationship(back_populates="user")
 
